@@ -3,8 +3,25 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `won starter blog`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `WONLOG`,
+    siteUrl: `https://wonstarterblogmain.gatsbyjs.io/`,
+    social: {
+      github: `https://github.com/jaewwwon`,
+    },
+    categorys: [`React`],
   },
-  plugins: ["gatsby-plugin-emotion"]
+  plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      },
+    },
+    `gatsby-plugin-mdx`,
+  ],
 };

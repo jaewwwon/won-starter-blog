@@ -1,0 +1,15 @@
+.main-cover {
+  margin-bottom: 24px;
+  .main-cover--thumb {
+    width: 100%;
+    border-radius: 20px;
+    height: 220px;
+    object-fit: cover;
+  }
+  .main-cover--title {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    color: #9e9e9e;
+  }
+}

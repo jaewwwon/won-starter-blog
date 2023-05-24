@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 32px;
+  background: linear-gradient(128.84deg, #2BC0E4 4.35%, #EAECC6 95.65%);
+  box-shadow: 1px 1px 10px #e5e5e5;
+  h1 {
+    font-family: 'Black Han Sans';
+    font-size: 26px;
+    color: #354649;
+  }
+}
