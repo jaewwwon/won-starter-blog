@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'gatsby';
 import './index.scss';
 
@@ -6,7 +7,7 @@ const Contents = ({ posts }) => {
     <div className="content">
       <ul className="post-list">
         {posts.map((node) => (
-          <li id={node.id}>
+          <li key={node.id}>
             <Link to={`/${node.frontmatter.slug}`}>
               <p className="date">{node.frontmatter.date}</p>
               <p className="title">{node.frontmatter.title}</p>

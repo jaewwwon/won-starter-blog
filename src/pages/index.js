@@ -9,7 +9,7 @@ const MainPage = ({ data }) => {
   const { nodes } = data.allMdx;
 
   return (
-    <Layout title={siteMetadata.title}>
+    <Layout>
       <MainCover />
       <Contents posts={nodes} />
     </Layout>
